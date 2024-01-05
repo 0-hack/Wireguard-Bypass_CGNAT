@@ -12,7 +12,7 @@ My solution here is to provide a basic setup using an open-source solution calle
 2. Further configuration can be done with the steps in here: https://www.wireguard.com/quickstart/
 3. Once the above is done, ensure you amend the sysctl.conf file located in <em>'/etc/sysctl.conf'</em>, remove the # from <em>"#net.ipv4.ip_forward=1"</em> on both gateway and homelab.
 4. Type <em>"sysctl -p"</em> to apply the change.
-5. Transfer the wg0.conf file located in this GitHub to the correct server.
+5. Transfer the wg0.conf file located in this GitHub to the correct server folder at <em>/etc/wireguard/</em>.
 6. Update the information according to the comments in the file.
 7. Run <em>"systemctl enable --now wg-quick@wg0"</em> on both server.
 8. Verify the service is running using <em>"systemctl status wg-quick@wg0"</em>
