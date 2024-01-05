@@ -2,9 +2,9 @@
 <h1>Background</h1>
 For certain region or country, local ISP are managing your home network using CGNAT(Carrier-grade NAT), which prevents you from doing port-forwarding on your router and expose your home server to the internet. After some research, I found that it is more expensive to host your server on the cloud(based on your CPU and memory requirements), so I made this guide to provide a lower-cost option for those who wants to expose their homelab on the internet.
 
-There are great solutions out there, such as Cloudflare Tunnel, which make it possible for you to expose your homelab without port-forwarding. Still, there is a limitation in terms of the protocol allowed to expose, as well as the restriction to run media streaming.
+There are great solutions that is free out there, such as Cloudflare Tunnel, which allow you to expose your homelab without port-forwarding. However, there is a limitation in terms of the protocol(e.g., UDP) allowed to expose, as well as the restriction to run media streaming.
 
-My solution here is to provide a basic setup using an open-source solution called Wireguard and, with the help of a cheap, low-cost VPS or a lower resource server with a public IP, to serve as the main gateway to your internal services.
+My solution here is to provide a basic setup using an open-source solution called Wireguard and, with the help of a cheap, low-cost VPS(e.g., AWS lightsail) or a lower resource server which has a public IP, to serve as the main gateway to your internal services.
 
 <h1>Steps</h1>
 
